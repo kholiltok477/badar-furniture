@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (lisset(_SESSION['s_username'])){
+    header("location: index.html");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
