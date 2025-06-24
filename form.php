@@ -1,6 +1,7 @@
 <?php
 session_start();
-if (lisset(_SESSION['s_username'])){
+session_destroy();
+if (!isset($_SESSION['s_username'])){
     header("location: index.html");
     exit;
 }
