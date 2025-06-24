@@ -27,8 +27,8 @@ session_start();
    $nama = $data[0];
    $aktivitas = "login";
    $waktu = date ('d-m-Y H:i:s');
-   $_SESSION['S_username'] =$admin;
-  header("Location: form.html");
+  $_SESSION['s_username'] = $admin;
+  header("Location: form.php");
 }
 else{
   header("Location: index.html");
